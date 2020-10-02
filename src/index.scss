@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kreon", serif;
+  background-color: #c0c0c0;
+}
+
+.main-head {
+  font-weight: 700;
+  span {
+    color: #d9381e;
+  }
+}
+
+.searchfield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.search-container {
+  border: 1px solid black;
+  padding: 5px 10px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    color: gray;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: inherit;
+  font-size: 20px;
+}
+
+.card {
+  overflow: hidden;
+  border:none;
+  img {
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(0.7);
+    }
+  }
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
